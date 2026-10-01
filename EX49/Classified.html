@@ -1,0 +1,303 @@
+<html>
+
+<head>
+
+    <title>Online Classifieds</title>
+
+    <style>
+
+        body {
+            background-color: white;
+            font-family: "Times New Roman", serif;
+            font-size: 12px;
+        }
+
+        #container {
+            width: 380px;
+            height: 460px;
+            margin: auto;
+            background-color: #ccffff;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        h2 {
+            color: red;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid gray;
+        }
+
+        .section {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        input[type="text"] {
+            height: 14px;
+        }
+
+        .date {
+            width: 95px;
+        }
+
+        .keyword {
+            width: 360px;
+        }
+
+        label {
+            margin-right: 8px;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-right: 25px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .icon {
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .search {
+            color: green;
+        }
+
+        .help {
+            color: blue;
+        }
+
+        .cancel {
+            color: red;
+        }
+
+        .text {
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<form>
+
+<div id="container">
+
+    <h2>Online Classifieds Search Form</h2>
+
+    <hr>
+
+
+    <!-- 1. Search sections -->
+
+    <div class="section">
+
+        <b>1) Search for a classified in the following sections:</b>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="section">
+            Employment
+        </label>
+
+        <label>
+            <input type="radio" name="section">
+            Personal
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="section" checked>
+            For Sale
+        </label>
+
+        <label>
+            <input type="radio" name="section">
+            Miscellaneous
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="section">
+            Housing
+        </label>
+
+        <label>
+            <input type="radio" name="section">
+            All of the above
+        </label>
+
+    </div>
+
+
+    <!-- 2. Search publications -->
+
+    <div class="section">
+
+        <b>2) Search the following publications:</b>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" checked>
+            Midwest times
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Modern News
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Employment Today
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" checked>
+            Great Lakes Classifieds
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Middleton Daily
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Cashtown Daily News
+        </label>
+
+    </div>
+
+
+    <!-- 3. Date -->
+
+    <div class="section">
+
+        <b>3) From</b>
+
+        <input
+            type="text"
+            class="date"
+            placeholder="mm/dd/yy"
+        >
+
+        <b>to</b>
+
+        <input
+            type="text"
+            class="date"
+            placeholder="mm/dd/yy"
+        >
+
+    </div>
+
+
+    <!-- 4. Keywords -->
+
+    <div class="section">
+
+        <b>
+            4) Enter a few keywords to describe the classified.
+        </b>
+
+        <br><br>
+
+        <input
+            type="text"
+            class="keyword"
+        >
+
+    </div>
+
+
+    <!-- 5. Buttons -->
+
+    <div class="section">
+
+        <b>5) Click one of the options below:</b>
+
+        <div class="buttons">
+
+
+            <!-- Search -->
+
+            <div
+                class="button search"
+                onclick="alert('Search')"
+            >
+
+                <span class="icon">✓</span>
+
+                <span class="text">
+                    Search
+                </span>
+
+            </div>
+
+
+            <!-- Help -->
+
+            <div
+                class="button help"
+                onclick="alert('Help')"
+            >
+
+                <span class="icon">?</span>
+
+                <span class="text">
+                    Help
+                </span>
+
+            </div>
+
+
+            <!-- Cancel -->
+
+            <div
+                class="button cancel"
+                onclick="document.querySelector('form').reset()"
+            >
+
+                <span class="icon">×</span>
+
+                <span class="text">
+                    Cancel
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</form>
+
+</body>
+
+</html>
