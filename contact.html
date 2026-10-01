@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Tiêu đề trang
+</title>
+    </head>
+    <body>
+        <form name="My_form">
+            <fieldset>
+               
+               
+        <legend>Thông tin cá nhân</legend>
+        <form
+        >
+            <table border="1" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="txtten"/></td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="date" name="txtbirthday"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="txtemail"/></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text" name="txtaddress"/></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="tel" name="txtphone"/></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gender" value="Nam"/>Nam
+                        <input type="radio" name="gender" value="Nữ"/>Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quốc tịch</td>
+                    <td>
+                        <select name="country">
+                            <option value="VN">Việt Nam</option>
+                            <option value="US">Mỹ</option>
+                            <option value="JP">Nhật Bản</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td>Ghi chú</td>
+                    <td><textarea name="txtnote"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Gửi thông tin"/>
+        </form>
